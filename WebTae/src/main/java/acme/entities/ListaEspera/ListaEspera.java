@@ -41,7 +41,7 @@ public class ListaEspera extends AbstractEntity {
 
 	protected Boolean							compatibilidad; // Indicación si hay donantes compatibles
 
-	// Relationships ----------------------------------------------------------
+	// Relationships ------------------------------------------
 
 	@OneToOne(optional = false)
 	protected Paciente							paciente;
