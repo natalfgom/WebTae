@@ -16,14 +16,14 @@ import lombok.Setter;
 @Setter
 public class Donante extends AbstractEntity {
 
-	// Serialisation identifier -----------------------------------------------
+	// Serialisation identifier ----------------------------------------------
 
 	protected static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	protected String			nombreDonante; // Nombre del donante
+	protected String			nombreDonante; // Nombre del donant
 
 	@NotNull
 	protected Integer			edadDonante; // Edad del donante
