@@ -16,7 +16,7 @@ import lombok.Setter;
 @Setter
 public class Donante extends AbstractEntity {
 
-	// Serialisation identifier -----------------------------------------------
+	// Serialisation identifier ----------------------------------------------
 
 	protected static final long	serialVersionUID	= 1L;
 
