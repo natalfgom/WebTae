@@ -29,7 +29,7 @@ public class ListaEspera extends AbstractEntity {
 
 	protected static final long					serialVersionUID	= 1L;
 
-	// Attributes -------------------------------------------------------------
+	// Attributes ---------------------------------------------------
 
 	@NotNull
 	@Temporal(TemporalType.DATE)
