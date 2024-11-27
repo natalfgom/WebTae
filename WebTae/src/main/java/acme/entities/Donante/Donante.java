@@ -23,7 +23,7 @@ public class Donante extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	protected String			nombreDonante; // Nombre del donante
+	protected String			nombreDonante; // Nombre del donant
 
 	@NotNull
 	protected Integer			edadDonante; // Edad del donante
