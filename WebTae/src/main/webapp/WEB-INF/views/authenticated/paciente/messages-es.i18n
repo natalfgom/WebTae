@@ -1,0 +1,10 @@
+authenticated.paciente.list.heading=Lista de Pacientes
+authenticated.paciente.list.nhusa=Número de Paciente
+authenticated.paciente.list.nombre=Nombre
+authenticated.paciente.list.apellidos=Apellidos
+authenticated.paciente.list.estado=Estado
+authenticated.paciente.list.fechaNacimiento=Fecha de Nacimiento
+authenticated.paciente.list.tipoSangre=Grupo Sanguíneo
+authenticated.paciente.list.genero=Género
+authenticated.paciente.list.historialMedico=Historial Médico
+authenticated.paciente.list.fechaRegistro=Fecha de Registro
