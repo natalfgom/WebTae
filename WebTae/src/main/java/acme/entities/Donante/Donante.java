@@ -16,29 +16,28 @@ import lombok.Setter;
 @Setter
 public class Donante extends AbstractEntity {
 
-	// Serialisation identifier ----------------------------------------------
-
+	// Serialisation identifier -----------------------------------------------
 	protected static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	protected String			nombreDonante; // Nombre del donant
-
-	@NotNull
-	protected Integer			edadDonante; // Edad del donante
-
-	@Enumerated(EnumType.STRING)
-	@NotNull
-	protected TipoSangre		tipoSangre; // Grupo sanguíneo del donante
+	protected String			idDonante;  // Identificador único del donante
 
 	@NotBlank
-	protected String			tipoOrgano; // Tipo de órgano disponible (e.g., Pulmón)
+	protected String			nombre;
+
+	@NotBlank
+	protected String			apellidos;
 
 	@NotNull
-	protected Boolean			compatibilidad; // Indicación si es compatible con algún paciente
+	@Enumerated(EnumType.STRING)
+	protected GrupoSanguineo	grupoSanguineo;  // Enum: A, B, AB, O
 
-	// Relationships ----------------------------------------------------------
-	// Puedes añadir relaciones si en el futuro conectas Donantes con otras entidades
+	@NotNull
+	@Enumerated(EnumType.STRING)
+	protected OrganoDisponible	organoDisponible;  // Enum: PULMON_COMPLETO_IZQUIERDO, PULMON_COMPLETO_DERECHO, LOBULO_PULMONAR
+
+	protected Double			volumenPulmonar;  // Volumen pulmonar
 
 }

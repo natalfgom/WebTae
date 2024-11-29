@@ -1,0 +1,11 @@
+key,idDonante,nombre,apellidos,grupoSanguineo,organoDisponible,volumenPulmonar
+donante-1,donante-1,Juan,Perez,A_POSITIVO,PULMON_COMPLETO_IZQUIERDO,1500.0
+donante-2,donante-2,Ana,Gomez,B_NEGATIVO,PULMON_COMPLETO_DERECHO,1300.0
+donante-3,donante-3,Carlos,Martinez,O_POSITIVO,LOBULO_PULMONAR,800.0
+donante-4,donante-4,Maria,Rodriguez,AB_POSITIVO,PULMON_COMPLETO_IZQUIERDO,1200.0
+donante-5,donante-5,Jorge,Fernandez,A_NEGATIVO,PULMON_COMPLETO_DERECHO,1400.0
+donante-6,donante-6,Lucia,Lopez,B_POSITIVO,PULMON_COMPLETO_IZQUIERDO,1600.0
+donante-7,donante-7,Pedro,Diaz,O_NEGATIVO,LOBULO_PULMONAR,900.0
+donante-8,donante-8,Elena,Martinez,AB_NEGATIVO,PULMON_COMPLETO_DERECHO,1100.0
+donante-9,donante-9,Manuel,Garcia,A_POSITIVO,PULMON_COMPLETO_IZQUIERDO,1450.0
+donante-10,donante-10,Isabel,Lopez,B_NEGATIVO,LOBULO_PULMONAR,850.0

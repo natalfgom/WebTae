@@ -1,5 +1,5 @@
 /*
- * Consumer.java
+ * Provider.java
  *
  * Copyright (C) 2012-2023 Rafael Corchuelo.
  *
@@ -22,7 +22,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Consumer extends AbstractRole {
+public class Admin extends AbstractRole {
 
 	// Serialisation identifier -----------------------------------------------
 
