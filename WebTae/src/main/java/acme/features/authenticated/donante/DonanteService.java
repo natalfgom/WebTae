@@ -16,7 +16,7 @@ public class DonanteService {
 
 	// Método para guardar un paciente (crear o editar)
 	public Donante save(final Donante donante) {
-		return this.donanteRepository.save(donante); // Guarda el paciente en la base de datos
+		return this.donanteRepository.save(donante); // Guarda el donante en la base de datos
 	}
 
 }
