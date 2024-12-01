@@ -1,0 +1,11 @@
+key,tipoTratamiento,estadoTratamiento,key:paciente
+tratamiento-1,QUIMIOTERAPIA,EN_CURSO,paciente-1
+tratamiento-2,RADIOTERAPIA,FINALIZADO,paciente-2
+tratamiento-3,TRASPLANTE,PENDIENTE,paciente-3
+tratamiento-4,CIRUGIA,EN_CURSO,paciente-4
+tratamiento-5,INMUNOTERAPIA,FINALIZADO,paciente-5
+tratamiento-6,OTRO,PENDIENTE,paciente-1
+tratamiento-7,QUIMIOTERAPIA,EN_CURSO,paciente-2
+tratamiento-8,RADIOTERAPIA,PENDIENTE,paciente-3
+tratamiento-9,CIRUGIA,FINALIZADO,paciente-4
+tratamiento-10,INMUNOTERAPIA,EN_CURSO,paciente-5
