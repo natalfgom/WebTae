@@ -1,0 +1,13 @@
+authenticated.donante.form.label.idDonante = Donor ID:
+authenticated.donante.form.label.nombre = First Name:
+authenticated.donante.form.label.apellidos = Last Name:
+authenticated.donante.form.label.grupoSanguineo = Blood Group:
+authenticated.donante.form.label.organoDisponible = Available Organ:
+authenticated.donante.form.label.volumenPulmonar = Pulmonary Volume:
+
+authenticated.donante.list.label.idDonante = Donor ID
+authenticated.donante.list.label.nombre = First Name
+authenticated.donante.list.label.apellidos = Last Name
+authenticated.donante.list.label.grupoSanguineo = Blood Group
+authenticated.donante.list.label.organoDisponible = Available Organ
+authenticated.donante.list.label.volumenPulmonar = Pulmonary Volume
