@@ -41,7 +41,7 @@
         </tbody>
     </table>
 
-    <!-- Activar el DataTable -->
+    <!-- Activar el DataTable -->  
     <script>
         $(document).ready(function () {
             $('#pacientesTable').DataTable();
