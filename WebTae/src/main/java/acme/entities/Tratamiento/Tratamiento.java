@@ -36,4 +36,5 @@ public class Tratamiento extends AbstractEntity {
 	@ManyToOne
 	@JoinColumn(name = "paciente_id")
 	protected Paciente			paciente;
+
 }

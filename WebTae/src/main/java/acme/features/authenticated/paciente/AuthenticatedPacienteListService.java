@@ -19,4 +19,5 @@ public class AuthenticatedPacienteListService {
 	public List<Paciente> listarPacientes() {
 		return this.pacienteRepository.findAll();
 	}
+
 }

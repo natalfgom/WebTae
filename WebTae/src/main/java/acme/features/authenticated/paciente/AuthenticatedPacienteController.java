@@ -60,4 +60,16 @@ public class AuthenticatedPacienteController {
 		this.pacienteService.delete(id);  // Usamos el servicio para eliminar el paciente
 		return "redirect:/authenticated/paciente/list";  // Redirige a la lista de pacientes
 	}
+
+
+	@Autowired
+	private PacienteService PacienteService;
+
+
+	@GetMapping("/lista-espera")
+	public String mostrarListaEspera(final Model model) {
+		final List<Paciente> pacientesConTrasplante = this.pacienteService.findPacientesConTratamientoTrasplante();
+		model.addAttribute("pacientes", pacientesConTrasplante);
+		return "authenticated/paciente/lista-espera";  // La vista que va a mostrar los pacientes
+	}
 }
