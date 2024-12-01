@@ -1,22 +1,49 @@
-<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<h1>Listado de Donantes</h1>
+<html>
+<head>
+    <title><spring:message code="authenticated.donante.list.title" /></title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <h1><spring:message code="Donantes disponibles" /></h1>
+    
+    <!-- Tabla de donantes -->
+    <table id="donantesTable" class="display">
+        <thead>
+            <tr>
+                <th><spring:message code="authenticated.donante.list.idDonante" text="ID del Donante" /></th>
+                <th><spring:message code="authenticated.donante.list.nombre" text="Nombre" /></th>
+                <th><spring:message code="authenticated.donante.list.apellidos" text="Apellidos" /></th>
+                <th><spring:message code="authenticated.donante.list.grupoSanguineo" text="Grupo Sanguíneo" /></th>
+                <th><spring:message code="authenticated.donante.list.organoDisponible" text="Órgano Disponible" /></th>
+                <th><spring:message code="authenticated.donante.list.volumenPulmonar" text="Volumen Pulmonar (ml)" /></th>
+            </tr>
+        </thead>
+        <tbody>
+            <c:forEach items="${donantes}" var="donante">
+                <tr>
+                    <td>${donante.idDonante}</td>
+                    <td>${donante.nombre}</td>
+                    <td>${donante.apellidos}</td>
+                    <td>${donante.grupoSanguineo}</td>
+                    <td>${donante.organoDisponible}</td>
+                    <td>${donante.volumenPulmonar}</td>
+                </tr>
+            </c:forEach>
+        </tbody>
+    </table>
 
-<!-- Comprobamos si hay donantes -->
-<c:if test="${not empty donantes}">
-    <acme:list>
-        <acme:list-column code="authenticated.donante.list.label.idDonante" path="idDonante" width="15%"/>
-        <acme:list-column code="authenticated.donante.list.label.nombre" path="nombre" width="20%"/>
-        <acme:list-column code="authenticated.donante.list.label.apellidos" path="apellidos" width="20%"/>
-        <acme:list-column code="authenticated.donante.list.label.grupoSanguineo" path="grupoSanguineo" width="15%"/>
-        <acme:list-column code="authenticated.donante.list.label.organoDisponible" path="organoDisponible" width="20%"/>
-        <acme:list-column code="authenticated.donante.list.label.volumenPulmonar" path="volumenPulmonar" width="10%"/>
-    </acme:list>
-</c:if>
-
-<!-- Mensaje si no hay donantes -->
-<c:if test="${empty donantes}">
-    <p>No hay donantes disponibles.</p>
-</c:if>
+    <!-- Activar el DataTable -->
+    <script>
+        $(document).ready(function () {
+            $('#donantesTable').DataTable();
+        });
+    </script>
+</body>
+</html>
