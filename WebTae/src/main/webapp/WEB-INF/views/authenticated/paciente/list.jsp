@@ -1,6 +1,4 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
-<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <html>
@@ -13,7 +11,6 @@
 <body>
     <h1><spring:message code="authenticated.paciente.list.heading" /></h1>
     
-    <!-- Tabla de pacientes -->
     <table id="pacientesTable" class="display">
         <thead>
             <tr>
@@ -24,6 +21,7 @@
                 <th><spring:message code="authenticated.paciente.list.tipoSangre" /></th>
                 <th><spring:message code="authenticated.paciente.list.genero" /></th>
                 <th><spring:message code="authenticated.paciente.list.historialMedico" /></th>
+                <th>Acciones</th> <!-- Nueva columna para acciones -->
             </tr>
         </thead>
         <tbody>
@@ -36,6 +34,10 @@
                     <td>${paciente.tipoSangre}</td>
                     <td>${paciente.genero}</td>
                     <td>${paciente.historialMedico}</td>
+                    <td>
+                        <!-- Botón para mostrar detalles -->
+                        <a href="/authenticated/paciente/detail/${paciente.id}" class="btn btn-info">Show</a>
+                    </td>
                 </tr>
             </c:forEach>
         </tbody>

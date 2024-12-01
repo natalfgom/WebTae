@@ -14,4 +14,5 @@ public interface PacienteRepository extends JpaRepository<Paciente, Long> {
 
 	@Query("SELECT p FROM Paciente p JOIN p.tratamientos t WHERE t.tipoTratamiento = 'TRASPLANTE'")
 	List<Paciente> findPacientesConTratamientoTrasplante();
+
 }
