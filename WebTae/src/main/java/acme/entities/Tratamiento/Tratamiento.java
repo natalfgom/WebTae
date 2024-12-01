@@ -6,6 +6,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -42,7 +43,8 @@ public class Tratamiento extends AbstractEntity {
 	// Relationships ----------------------------------------------------------
 
 	@NotNull
-	@ManyToOne(optional = false)
-	protected Paciente			paciente; // Referencia al paciente que recibe este tratamiento
+	@ManyToOne
+	@JoinColumn(name = "paciente_id")
+	protected Paciente			paciente;
 
 }

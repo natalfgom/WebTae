@@ -8,6 +8,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
@@ -43,7 +44,8 @@ public class ListaEspera extends AbstractEntity {
 
 	// Relationships -------------------------------------------------
 
-	@OneToOne(optional = false)
+	@OneToOne
+	@JoinColumn(name = "paciente_id")
 	protected Paciente							paciente;
 
 	@OneToMany(mappedBy = "listaEspera", cascade = CascadeType.ALL)

@@ -8,3 +8,6 @@ authenticated.paciente.list.tipoSangre=Grupo Sanguíneo
 authenticated.paciente.list.genero=Género
 authenticated.paciente.list.historialMedico=Historial Médico
 authenticated.paciente.list.fechaRegistro=Fecha de Registro
+authenticated.paciente.list.telefono=Teléfono
+authenticated.paciente.list.correoElectronico=Correo Electrónico
+authenticated.paciente.list.superficieCorporal=Superficie Corporal

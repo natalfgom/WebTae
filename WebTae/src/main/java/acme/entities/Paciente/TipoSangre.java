@@ -2,5 +2,6 @@
 package acme.entities.Paciente;
 
 public enum TipoSangre {
-	A, B, AB, O
+	A, B, AB, O,
+
 }
