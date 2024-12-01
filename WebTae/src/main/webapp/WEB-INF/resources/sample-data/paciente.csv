@@ -1,0 +1,2 @@
+key, nhusa, nombre, apellidos, fechaNacimiento, genero, tipoSangre, superficieCorporal, telefono, correoElectronico, historialMedico, estado, fechaRegistro
+paciente-1, NP001, Juan, Perez, 1980-05-20, MASCULINO, A_Positivo, 1.75, 34912345678, juan@correo.com, Alergias, TRATAMIENTO, 2022-09-20 00:00:00

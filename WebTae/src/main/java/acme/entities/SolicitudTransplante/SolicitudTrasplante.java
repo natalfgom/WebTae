@@ -44,9 +44,9 @@ public class SolicitudTrasplante extends AbstractEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	@NotNull
-	@ManyToOne(optional = false)
-	protected Paciente			receptor; // Paciente receptor del trasplante
+	@ManyToOne
+	@JoinColumn(name = "paciente_id")  // Este es el campo que hace la relación
+	protected Paciente			receptor;
 
 	@NotNull
 	@ManyToOne(optional = false)
