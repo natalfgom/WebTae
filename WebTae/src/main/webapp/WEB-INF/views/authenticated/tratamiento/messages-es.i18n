@@ -1,0 +1,9 @@
+authenticated.tratamiento.list.title=Lista de Tratamientos
+authenticated.tratamiento.list.heading=Lista de Tratamientos
+authenticated.tratamiento.list.tipoTratamiento=Tipo de Tratamiento
+authenticated.tratamiento.list.estadoTratamiento=Estado del Tratamiento
+authenticated.tratamiento.list.paciente=Paciente
+authenticated.tratamiento.list.actions=Acciones
+authenticated.tratamiento.edit=Editar
+authenticated.tratamiento.delete=Eliminar
+authenticated.tratamiento.delete.confirm=¿Estás seguro de que deseas eliminar este tratamiento?

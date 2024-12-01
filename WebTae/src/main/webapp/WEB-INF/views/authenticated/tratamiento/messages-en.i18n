@@ -1,0 +1,9 @@
+authenticated.tratamiento.list.title=Treatment List
+authenticated.tratamiento.list.heading=Treatment List
+authenticated.tratamiento.list.tipoTratamiento=Type of Treatment
+authenticated.tratamiento.list.estadoTratamiento=Treatment Status
+authenticated.tratamiento.list.paciente=Patient
+authenticated.tratamiento.list.actions=Actions
+authenticated.tratamiento.edit=Edit
+authenticated.tratamiento.delete=Delete
+authenticated.tratamiento.delete.confirm=Are you sure you want to delete this treatment?
