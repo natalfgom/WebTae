@@ -17,23 +17,25 @@
     <table id="donantesTable" class="display">
         <thead>
             <tr>
-                <th><spring:message code="authenticated.donante.list.idDonante" text="ID del Donante" /></th>
+                <th><spring:message code="authenticated.donante.list.nhusa" text="NHUSA" /></th>
                 <th><spring:message code="authenticated.donante.list.nombre" text="Nombre" /></th>
                 <th><spring:message code="authenticated.donante.list.apellidos" text="Apellidos" /></th>
                 <th><spring:message code="authenticated.donante.list.grupoSanguineo" text="Grupo Sanguíneo" /></th>
                 <th><spring:message code="authenticated.donante.list.organoDisponible" text="Órgano Disponible" /></th>
                 <th><spring:message code="authenticated.donante.list.volumenPulmonar" text="Volumen Pulmonar (ml)" /></th>
+                <th><spring:message code="authenticated.donante.list.fechaExtraccion" text="Fecha de Extracción" /></th>
             </tr>
         </thead>
         <tbody>
             <c:forEach items="${donantes}" var="donante">
                 <tr>
-                    <td>${donante.idDonante}</td>
+                    <td>${donante.nhusa}</td>
                     <td>${donante.nombre}</td>
                     <td>${donante.apellidos}</td>
                     <td>${donante.grupoSanguineo}</td>
                     <td>${donante.organoDisponible}</td>
                     <td>${donante.volumenPulmonar}</td>
+                    <td>${donante.fechaExtraccion}</td>
                 </tr>
             </c:forEach>
         </tbody>

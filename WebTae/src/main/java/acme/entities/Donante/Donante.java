@@ -1,6 +1,8 @@
 
 package acme.entities.Donante;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -22,7 +24,7 @@ public class Donante extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	protected String			idDonante;  // Identificador único del donante
+	protected String			nhusa; // Identificador único del paciente
 
 	@NotBlank
 	protected String			nombre;
@@ -39,5 +41,7 @@ public class Donante extends AbstractEntity {
 	protected OrganoDisponible	organoDisponible;  // Enum: PULMON_COMPLETO_IZQUIERDO, PULMON_COMPLETO_DERECHO, LOBULO_PULMONAR
 
 	protected Double			volumenPulmonar;  // Volumen pulmonar
+
+	protected Date				fechaExtraccion;
 
 }
