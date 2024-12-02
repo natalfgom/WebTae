@@ -1,188 +1,349 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1.0">
-  <zoom_level>5</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>255</x>
-      <y>240</y>
-      <w>60</w>
-      <h>70</h>
+      <x>624</x>
+      <y>200</y>
+      <w>72</w>
+      <h>96</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0;100.0;90.0;100.0;120.0</additional_attributes>
+    <panel_attributes>lt=..
+</panel_attributes>
+    <additional_attributes>70.0;100.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLNote</id>
     <coordinates>
-      <x>205</x>
-      <y>240</y>
-      <w>65</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>110.0;10.0;110.0;90.0;10.0;90.0;10.0;120.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>350</x>
-      <y>220</y>
-      <w>50</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Administrator
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>350</x>
-      <y>180</y>
-      <w>50</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Anonymous
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>350</x>
-      <y>255</y>
-      <w>50</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Authenticated
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>295</x>
-      <y>195</y>
-      <w>65</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;70.0;70.0;70.0;10.0;110.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>295</x>
-      <y>225</y>
-      <w>65</w>
-      <h>15</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>295</x>
-      <y>225</y>
-      <w>65</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;110.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>260</x>
-      <y>300</y>
-      <w>100</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Provider
---
-+ company: String {NotBlank}
-+ sector: String {NotBlank}
-bg=green</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>125</x>
-      <y>300</y>
-      <w>105</w>
+      <x>664</x>
+      <y>280</y>
+      <w>112</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Consumer
---
-+ company: String {NotBlank}
-+ sector: String {NotBlank}
-bg=green</panel_attributes>
+    <panel_attributes>bg=green
+Volumen Pulmonar 
+debe ser positivo</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>225</x>
-      <y>215</y>
-      <w>75</w>
-      <h>30</h>
+      <x>64</x>
+      <y>320</y>
+      <w>296</w>
+      <h>136</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-AbstractUserRole
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>75</x>
-      <y>155</y>
-      <w>110</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
-DefaultUserIdentity
+    <panel_attributes>bg=green
+&lt;&lt;Entity&gt;&gt;
+Paciente
 --
-+ name: String {NotBlank}
-+ surname: String {♫NotBlank}
-+ email: String {NotBlank, Email}
-+ / fullName: String {NotBlank}
-bg=yellow
++ NHUSA: String {Unique, NotBlank}
++ Nombre: String {NotBlank}
++ Apellidos: String {NotBlank}
++ Género: Genero
++ GrupoSanguíneo: TipoSangre
++ Historial Médico: String 
++ Estado: EstadoPaciente
++ Urgencia: Urgencia 
+
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>75</x>
-      <y>235</y>
-      <w>110</w>
-      <h>35</h>
+      <x>-144</x>
+      <y>352</y>
+      <w>128</w>
+      <h>80</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
-UserIdentity
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Genero
 --
++ Masculino
++ Femenino
++ Otro
 bg=green
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>48</x>
+      <y>208</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Urgencia
+--
++ Baja
++ Media
++ Muy Alta
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>-144</x>
+      <y>184</y>
+      <w>128</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoSangre
+--
++ A_POSITIVO
++ A_NEGATIVO
++ B_POSITIVO
++B_NEGATIVO
++AB_POSITIVO
++AB_NEGATIVO
++O_POSITIVO
++O_NEGATIVO
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>208</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+EstadoPaciente
+--
++ Tratamiento
++ Finalizado
+
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>272</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Administrador
+--
++ rolName: String {NotBlank}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
     <id>Relation</id>
     <coordinates>
-      <x>130</x>
-      <y>210</y>
-      <w>15</w>
-      <h>35</h>
+      <x>352</x>
+      <y>320</y>
+      <w>192</w>
+      <h>120</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+    <panel_attributes>lt=-&gt;
+m1=*
+m2=1
+Registrado por &gt;</panel_attributes>
+    <additional_attributes>10.0;120.0;110.0;120.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>32</x>
+      <y>528</y>
+      <w>272</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Lista de Esper
+--
++ Paciente: Paciente
++ EstadoSolicitud: EstadoSolicitud
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>152</x>
+      <y>448</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>-120</x>
+      <y>520</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+EstadoSolicitud
+--
++ PENDIENTE
++ ASIGNADO
++ RECHAZADO
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>72</y>
+      <w>296</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>bg=green
+&lt;&lt;Entity&gt;&gt;
+Doanate
+--
++ NHUSA: String {Unique, NotBlank}
++ Nombre: String {NotBlank}
++ Apellidos: String {NotBlank}
++ Género: Genero
++ GrupoSanguíneo: TipoSangre
++ Órgano Disponible: ÓrganoDisponible
++ VolumenPulmonar: Double {NotBlank}
++ FechaExtracción: NotNull, Temporal(TIMESTAMP)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>200</y>
+      <w>112</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=*
+m2=1
+Registrado por &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>704</x>
+      <y>72</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+ÓrganoDisponible
+--
++ Pulmón completo izquierdo
++ Pulmón completo derecho
++ Lóbulo pulmonar
+
+bg=green
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>256</x>
+      <y>632</y>
+      <w>272</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Tratamiento
+--
++ TipoTratamiento: tipoTratamiento
++ Estado de tratamiento: estadoTratamiento
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>448</y>
+      <w>24</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>104</x>
+      <y>624</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+tipoTratamiento
+--
++ QUIMIOTERAPIA
++ RADIOTERAPIA
++ CIRUGIA
++TRASPLANTE
++INMUNOTERAPIA
++OTRO
+bg=green
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>632</x>
+      <y>416</y>
+      <w>192</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Neumologo
+--
++ Nombre: String {NotBlank}
++ Apellido: String {NotBlank}
++ ColegioProfesional: String {NotBlank}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>480</y>
+      <w>256</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=*
+m2=1
+Registrado por &gt;</panel_attributes>
+    <additional_attributes>10.0;240.0;260.0;240.0;260.0;10.0</additional_attributes>
   </element>
 </diagram>
