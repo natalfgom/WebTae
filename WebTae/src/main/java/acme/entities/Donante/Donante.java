@@ -40,8 +40,10 @@ public class Donante extends AbstractEntity {
 	@Enumerated(EnumType.STRING)
 	protected OrganoDisponible	organoDisponible;  // Enum: PULMON_COMPLETO_IZQUIERDO, PULMON_COMPLETO_DERECHO, LOBULO_PULMONAR
 
+	@NotNull
 	protected Double			volumenPulmonar;  // Volumen pulmonar
 
+	@NotNull
 	protected Date				fechaExtraccion;
 
 }
