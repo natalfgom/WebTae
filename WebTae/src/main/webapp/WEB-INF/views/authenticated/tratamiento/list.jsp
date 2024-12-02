@@ -20,7 +20,6 @@
                 <th><spring:message code="authenticated.tratamiento.list.tipoTratamiento" /></th>
                 <th><spring:message code="authenticated.tratamiento.list.estadoTratamiento" /></th>
                 <th><spring:message code="authenticated.tratamiento.list.paciente" /></th>
-                <th><spring:message code="authenticated.tratamiento.list.actions" /></th>
             </tr>
         </thead>
         <tbody>
@@ -29,10 +28,6 @@
                     <td>${tratamiento.tipoTratamiento}</td>
                     <td>${tratamiento.estadoTratamiento}</td>
                     <td>${tratamiento.paciente.nombre} ${tratamiento.paciente.apellidos}</td>
-                    <td>
-                        <a href="<c:url value='/authenticated/tratamiento/edit/${tratamiento.id}'/>" class="btn btn-warning btn-sm"><spring:message code="authenticated.tratamiento.edit" /></a>
-                        <a href="<c:url value='/authenticated/tratamiento/delete/${tratamiento.id}'/>" class="btn btn-danger btn-sm" onclick="return confirm('<spring:message code="authenticated.tratamiento.delete.confirm" />')"><spring:message code="authenticated.tratamiento.delete" /></a>
-                    </td>
                 </tr>
             </c:forEach>
         </tbody>

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import acme.entities.Paciente.Paciente;
 
@@ -73,14 +74,11 @@ public class AuthenticatedPacienteController {
 		return "authenticated/paciente/lista-espera";  // La vista que va a mostrar los pacientes
 	}
 
-	@GetMapping("/detail/{id}")
-	public String showPacienteDetail(@PathVariable final Long id, final Model model) {
-		final Paciente paciente = this.pacienteService.findById(id);
-		if (paciente != null) {
-			model.addAttribute("paciente", paciente);
-			return "authenticated/paciente/form"; // La vista 'form.jsp'
-		} else
-			return "error/404"; // Si no se encuentra el paciente
+	@RequestMapping(value = "/authenticated/paciente/detail/{id}", method = RequestMethod.GET)
+	public String getPacienteDetail(@PathVariable("id") final Long id, final Model model) {
+		final Paciente paciente = this.pacienteService.findById(id); // Obtiene los detalles del paciente usando el id
+		model.addAttribute("paciente", paciente); // Pasa el paciente al modelo
+		return "authenticated/paciente/form"; // Devuelve la vista 'form.jsp' que contiene el detalle
 	}
 
 }

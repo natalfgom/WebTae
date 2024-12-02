@@ -28,4 +28,5 @@ master.menu.neumologo.view-donors = Ver donantes
 
 # master.menu.user-account ###################################################
 
-master.menu.user-account = Perfil  # <-- Aquí se ha cambiado
+master.menu.user-account = Perfil  
+master.menu.user-account.general-data = Acceso

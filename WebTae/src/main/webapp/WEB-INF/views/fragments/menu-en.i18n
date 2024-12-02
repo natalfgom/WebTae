@@ -28,4 +28,5 @@ master.menu.neumologo.view-donors = View Donors
 
 # master.menu.user-account ###################################################
 
-master.menu.user-account = Profile  # <-- Aquí se ha cambiado
+master.menu.user-account = Profile  
+master.menu.user-account.general-data = Access
