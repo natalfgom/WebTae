@@ -11,3 +11,12 @@ authenticated.paciente.list.tipoSangre=Blood Type
 authenticated.paciente.list.genero=Gender
 authenticated.paciente.list.historialMedico=Medical History
 authenticated.paciente.list.fechaRegistro=Registration Date
+
+
+authenticated.paciente.detail.nhusa=Patient Number
+authenticated.paciente.detail.nombre=First Name
+authenticated.paciente.detail.apellidos=Last Name
+authenticated.paciente.detail.tipoSangre=Blood Type
+authenticated.paciente.detail.estado=Status
+authenticated.paciente.detail.historialMedico=Medical History
+authenticated.paciente.detail.fechaRegistro=Registration Date

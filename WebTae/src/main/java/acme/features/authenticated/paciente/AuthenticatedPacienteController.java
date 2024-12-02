@@ -75,10 +75,12 @@ public class AuthenticatedPacienteController {
 
 	@GetMapping("/detail/{id}")
 	public String showPacienteDetail(@PathVariable final Long id, final Model model) {
-		final Paciente paciente = this.pacienteService.findById(id);  // Obtener el paciente por su ID
-		if (paciente == null)
-			return "redirect:/error";  // Redirigir a una página de error si no se encuentra el paciente
-		model.addAttribute("paciente", paciente);
-		return "authenticated/paciente/detail";  // Nombre de la vista que muestra los detalles del paciente
+		final Paciente paciente = this.pacienteService.findById(id);
+		if (paciente != null) {
+			model.addAttribute("paciente", paciente);
+			return "authenticated/paciente/form"; // La vista 'form.jsp'
+		} else
+			return "error/404"; // Si no se encuentra el paciente
 	}
+
 }

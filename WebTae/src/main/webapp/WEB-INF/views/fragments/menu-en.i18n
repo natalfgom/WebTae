@@ -1,15 +1,3 @@
-# menu-en.i18n
-#
-# Copyright (C) 2012-2023 Rafael Corchuelo.
-#
-# In keeping with the traditional purpose of furthering education and research, it is
-# the policy of the copyright owner to permit non-commercial use and redistribution of
-# this software. It has been tested carefully, but it is not guaranteed for any particular
-# purposes.  The copyright owner does not offer any warranties or representations, nor do
-# they accept any liabilities with respect to them.
-
-# master.menu #################################################################
-
 master.menu.home = Home
 master.menu.sign-up = Sign up
 master.menu.sign-in = Sign in
@@ -24,26 +12,20 @@ master.menu.anonymous.favourite-link = Favourite link
 
 master.menu.administrator = Administrator
 master.menu.administrator.dashboard = Dashboard
-master.menu.administrator.user-accounts = User accounts
-master.menu.administrator.populate-initial = Populate DB (initial)
-master.menu.administrator.populate-sample = Populate DB (samples)
-master.menu.administrator.shut-down = Shut down
+master.menu.administrator.view-patients = View Patients
+master.menu.administrator.view-waiting-list = View Waiting List
+master.menu.administrator.view-treatments = View Treatments
+master.menu.administrator.view-donors = View Donors
+master.menu.administrator.shut-down = Shut Down
 
-# master.menu.provider ########################################################
+# master.menu.neumologo ######################################################
 
-master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
+master.menu.neumologo = Neumologist
+master.menu.neumologo.view-patients = View Patients
+master.menu.neumologo.view-waiting-list = View Waiting List
+master.menu.neumologo.view-treatments = View Treatments
+master.menu.neumologo.view-donors = View Donors
 
-# master.menu.consumer ##########################################################
+# master.menu.user-account ###################################################
 
-master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
-
-# master.menu.user-account ####################################################
-
-master.menu.user-account = Account
-master.menu.user-account.general-data = General data
-master.menu.user-account.provider = Provider data
-master.menu.user-account.become-provider = Become a provider
-master.menu.user-account.consumer = Consumer data
-master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account = Profile  # <-- Aquí se ha cambiado
