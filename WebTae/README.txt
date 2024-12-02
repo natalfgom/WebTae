@@ -20,7 +20,6 @@ El sistema está diseñado para gestionar de manera integral la información de 
 - **/fragments/**
 
 ---
-![Pantalla de bienvenida](src/main/resources/bienvenido.png)
 
 ## Requisitos del Proyecto
 
