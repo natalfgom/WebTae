@@ -67,7 +67,7 @@ El sistema está diseñado para gestionar de manera integral la información de 
 ### Requisitos No Funcionales
 - **RNF1:** Interfaz Intuitiva: Facilitar la navegación para neumólogos y administradores.
 - **RNF2:** Escalabilidad: Manejar grandes volúmenes de datos.
-- **RNF3:** Eliminación de Donantes: Remover donantes cuya extracción supere las 8 horas.
+- **RNF3:** Eliminación de Donantes: Eliminar donantes cuya extracción supere las 8 horas.
 - **RNF4:** Automatización de Listas de Espera: Añadir pacientes automáticamente si el tratamiento es un trasplante.
 - **RNF5:** Compatibilidad de Donantes: Determinar compatibilidad basada en grupo sanguíneo y tipo de órgano.
 - **RNF6:** Integridad de Datos: Validación estricta de datos.
