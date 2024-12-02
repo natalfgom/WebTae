@@ -21,6 +21,7 @@
                 <th><spring:message code="authenticated.paciente.list.tipoSangre" /></th>
                 <th><spring:message code="authenticated.paciente.list.genero" /></th>
                 <th><spring:message code="authenticated.paciente.list.historialMedico" /></th>
+                <th><spring:message code="authenticated.paciente.list.prioridad" /> <!-- Cambiado a prioridad --> </th>
             </tr>
         </thead>
         <tbody>
@@ -33,6 +34,8 @@
                     <td>${paciente.tipoSangre}</td>
                     <td>${paciente.genero}</td>
                     <td>${paciente.historialMedico}</td>
+                    <td>${paciente.urgencia}</td> 
+    
                 </tr>
             </c:forEach>
         </tbody>

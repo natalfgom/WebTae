@@ -10,6 +10,7 @@ authenticated.paciente.list.fechaNacimiento=Fecha de Nacimiento
 authenticated.paciente.list.genero=Género
 authenticated.paciente.list.historialMedico=Historial Médico
 authenticated.paciente.list.fechaRegistro=Fecha de Registro
+authenticated.paciente.list.urgencia=Urgencia
 
 
 authenticated.paciente.detail.nhusa=Número de Paciente

@@ -1,11 +1,11 @@
-key,nhusa,nombre,apellidos,genero,tipoSangre,historialMedico,estado
-paciente-1,12345-J,Juan,Perez,MASCULINO,A_POSITIVO,""""Enfermedad pulmonar obstructiva cronica"""",TRATAMIENTO
-paciente-2,67890-K,Ana,Gomez,FEMENINO,O_POSITIVO,""""Diabetes tipo 1"""",TRATAMIENTO
-paciente-3,11223-M,Carlos,Martinez,MASCULINO,B_NEGATIVO,""""Hipertension arterial"""",TRATAMIENTO
-paciente-4,44556-N,Maria,Rodriguez,FEMENINO,AB_NEGATIVO,""""Asma cronica"""",TRATAMIENTO
-paciente-5,77889-P,Jorge,Fernandez,MASCULINO,A_POSITIVO,""""Insuficiencia renal"""",TRATAMIENTO
-paciente-6,33445-Q,Lucia,Lopez,FEMENINO,O_NEGATIVO,""""Artritis reumatoide"""",FINALIZADO
-paciente-7,55678-R,Pedro,Diaz,MASCULINO,AB_POSITIVO,""""EPOC avanzada"""",TRATAMIENTO
-paciente-8,88900-S,Elena,Martinez,FEMENINO,B_NEGATIVO,""""Cardiopatia isquemica"""",TRATAMIENTO
-paciente-9,99234-T,Manuel,Garcia,MASCULINO,A_POSITIVO,""""Obesidad morbida"""",FINALIZADO
-paciente-10,77654-U,Isabel,Lopez,FEMENINO,O_NEGATIVO,""""Cancer de pulmon"""",TRATAMIENTO
+key,nhusa,nombre,apellidos,genero,tipoSangre,historialMedico,estado,urgencia
+paciente-1,12345-J,Juan,Perez,MASCULINO,A_POSITIVO,"Enfermedad pulmonar obstructiva cronica",TRATAMIENTO,MEDIO
+paciente-2,67890-K,Ana,Gomez,FEMENINO,O_POSITIVO,"Diabetes tipo 1",TRATAMIENTO,BAJO
+paciente-3,11223-M,Carlos,Martinez,MASCULINO,B_NEGATIVO,"Hipertension arterial",TRATAMIENTO,MUY_ALTO
+paciente-4,44556-N,Maria,Rodriguez,FEMENINO,AB_NEGATIVO,"Asma cronica",TRATAMIENTO,MUY_ALTO
+paciente-5,77889-P,Jorge,Fernandez,MASCULINO,A_POSITIVO,"Insuficiencia renal",TRATAMIENTO,MEDIO
+paciente-6,33445-Q,Lucia,Lopez,FEMENINO,O_NEGATIVO,"Artritis reumatoide",FINALIZADO,MUY_ALTO
+paciente-7,55678-R,Pedro,Diaz,MASCULINO,AB_POSITIVO,"EPOC avanzada",TRATAMIENTO,MEDIO
+paciente-8,88900-S,Elena,Martinez,FEMENINO,B_NEGATIVO,"Cardiopatia isquemica",TRATAMIENTO,MEDIO
+paciente-9,99234-T,Manuel,Garcia,MASCULINO,A_POSITIVO,"Obesidad morbida",FINALIZADO,MUY_ALTO
+paciente-10,77654-U,Isabel,Lopez,FEMENINO,O_NEGATIVO,"Cancer de pulmon",TRATAMIENTO,MUY_ALTO

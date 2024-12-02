@@ -22,6 +22,7 @@
                 <th><spring:message code="authenticated.paciente.list.apellidos" /></th>
                 <th><spring:message code="authenticated.paciente.list.tipoSangre" /></th>
                 <th><spring:message code="authenticated.paciente.list.estado" /></th>
+                 <th><spring:message code="authenticated.paciente.list.urgencia" /></th>
             </tr>
         </thead>
         <tbody>
@@ -32,6 +33,7 @@
                     <td>${paciente.apellidos}</td>
                     <td>${paciente.tipoSangre}</td>
                     <td>${paciente.estado}</td>
+                        <td>${paciente.urgencia}</td>
                 </tr>
             </c:forEach>
         </tbody>

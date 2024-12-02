@@ -51,10 +51,14 @@ public class Paciente extends AbstractEntity {
 
 	@NotNull
 	@Enumerated(EnumType.STRING)
-	protected EstadoPaciente			estado; // Enum: TRATAMIENTO, EVALUACION, POST_TRASPLANTE
+	protected EstadoPaciente			estado;
 
 	@OneToOne
 	protected ListaEspera				listaEspera;
+
+	@NotNull
+	@Enumerated(EnumType.STRING)
+	protected Urgencia					urgencia; // Enum: ALTA, MEDIA, BAJA
 
 	// Relación con los tratamientos
 	@OneToMany(mappedBy = "paciente", cascade = CascadeType.ALL)
