@@ -13,10 +13,7 @@ authenticated.paciente.list.fechaRegistro=Fecha de Registro
 authenticated.paciente.list.prioridad=Urgencia
 
 
-authenticated.paciente.detail.nhusa=Número de Paciente
-authenticated.paciente.detail.nombre=Nombre
-authenticated.paciente.detail.apellidos=Apellidos
-authenticated.paciente.detail.tipoSangre=Tipo de Sangre
-authenticated.paciente.detail.estado=Estado
-authenticated.paciente.detail.historialMedico=Historial Médico
-authenticated.paciente.detail.fechaRegistro=Fecha de Registro
+
+authenticated.paciente.form.label.nombre = Nombre
+authenticated.paciente.form.label.apellidos = Apellidos
+authenticated.paciente.form.label.historialMedico = Historial Médico

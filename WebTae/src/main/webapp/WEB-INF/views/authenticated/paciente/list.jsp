@@ -9,7 +9,7 @@
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
-    <h1><spring:message code="authenticated.paciente.list.heading" /></h1>
+    <h1><spring:message code="authenticated.paciente.list.title" /></h1>
     
     <table id="pacientesTable" class="display">
         <thead>
