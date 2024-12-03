@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import acme.entities.Donante.Donante;
 
@@ -21,6 +22,9 @@ public class AuthenticatedDonanteController {
 	@Autowired
 	protected AuthenticatedDonanteListService	listService;
 
+	@Autowired
+	protected AuthenticatedDonanteShowService	showService;  // Inyecta el servicio para mostrar un donante específico
+
 
 	// Método para listar donantes
 	@GetMapping("/list")
@@ -28,5 +32,16 @@ public class AuthenticatedDonanteController {
 		final List<Donante> donantes = this.listService.listardonantes();
 		model.addAttribute("donantes", donantes);
 		return "authenticated/donante/list";
+	}
+
+	// Método para mostrar detalles de un donante específico
+	@GetMapping("/show")
+	public String mostrarDonante(@RequestParam("id") final int id, final Model model) {
+		final Donante donante = this.showService.findDonanteById(id);  // Usar el servicio para obtener el Donante por ID
+		if (donante != null) {
+			model.addAttribute("donante", donante);  // Añadir el donante al modelo
+			return "authenticated/donante/show";  // Retornar la vista que muestra los detalles del Donante
+		} else
+			return "redirect:/authenticated/donante/list";  // Si no se encuentra el donante, redirigir al listado
 	}
 }

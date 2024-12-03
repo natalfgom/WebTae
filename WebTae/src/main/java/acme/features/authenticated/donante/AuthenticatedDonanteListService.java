@@ -18,5 +18,6 @@ public class AuthenticatedDonanteListService {
 
 	public List<Donante> listardonantes() {
 		return this.donanteRepository.findAll();
+
 	}
 }
