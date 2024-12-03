@@ -11,7 +11,7 @@ authenticated.paciente.list.tipoSangre=Blood Type
 authenticated.paciente.list.genero=Gender
 authenticated.paciente.list.historialMedico=Medical History
 authenticated.paciente.list.fechaRegistro=Registration Date
-authenticated.paciente.list.prioridad=Urgency
+authenticated.paciente.list.urgencia=Urgency
 
 
 authenticated.paciente.form.label.nombre = First Name
