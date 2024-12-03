@@ -36,11 +36,6 @@ public class PacienteService {
 		this.pacienteRepository.deleteById(id); // Elimina el paciente por ID
 	}
 
-
-	@Autowired
-	private PacienteRepository PacienteRepository;
-
-
 	public List<Paciente> findPacientesConTratamientoTrasplante() {
 		return this.pacienteRepository.findPacientesConTratamientoTrasplante();
 	}

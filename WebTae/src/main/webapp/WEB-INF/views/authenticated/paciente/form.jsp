@@ -1,17 +1,22 @@
 <%@ page language="java" %>
-
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
-<%@ taglib uri="http://www.the-acme-framework.org/" prefix="acme" %>
 
-<acme:form readonly="true">
-    <!-- Nombre del paciente -->
-    <acme:input-textbox code="authenticated.paciente.form.label.nombre" path="nombre" />
-    
-    <!-- Apellido del paciente -->
-    <acme:input-textbox code="authenticated.paciente.form.label.apellidos" path="apellidos" />
-    
-    <!-- Historial médico del paciente -->
-    <acme:input-textarea code="authenticated.paciente.form.label.historialMedico" path="historialMedico" />
-</acme:form>
+<html>
+<head>
+    <title>Detalle del Paciente</title>
+</head>
+<body>
+    <h1>Detalle del Paciente</h1>
+
+    <!-- Mostrar los detalles del paciente -->
+    <p><strong>Nombre:</strong> ${paciente.nombre}</p>
+    <p><strong>Apellidos:</strong> ${paciente.apellidos}</p>
+    <p><strong>Historial Médico:</strong> ${paciente.historialMedico}</p>
+    <p><strong>Estado:</strong> ${paciente.estado}</p>
+    <!-- Agrega los demás campos del paciente que deseas mostrar -->
+
+    <!-- Botón para regresar a la lista de pacientes -->
+    <a href="/authenticated/paciente/list">Volver a la lista</a>
+</body>
+</html>

@@ -5,12 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Paciente.Paciente;
+import acme.framework.components.accounts.Authenticated;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 import acme.repositories.PacienteRepository;
 
 @Service
-public class AuthenticatedPacienteShowService extends AbstractService {
+public class AuthenticatedPacienteShowService extends AbstractService<Authenticated, Paciente> {
 
 	@Autowired
 	protected PacienteRepository repository;
@@ -22,7 +23,7 @@ public class AuthenticatedPacienteShowService extends AbstractService {
 
 	@Override
 	public void check() {
-		// Comprobar si el usuario está autenticado o tiene permisos para acceder a los detalles del paciente.
+
 	}
 
 	@Override
@@ -36,12 +37,14 @@ public class AuthenticatedPacienteShowService extends AbstractService {
 
 	@Override
 	public void load() {
-		// Cargar el paciente según el ID proporcionado en la solicitud.
-		final long id = this.getRequest().getData("id", Long.class);  // Obtén el ID del paciente
-		final Paciente paciente = this.repository.findById(id).orElse(null);  // Buscar el paciente
-		this.getResponse().setData(paciente);  // Establecer los datos de la respuesta
+		Paciente object;
+		int id;
+		id = super.getRequest().getData("id", int.class);
+		object = this.repository.findOnePacienteById(id);
+		super.getBuffer().setData(object);
 	}
 
+	@Override
 	public void unbind(final Paciente object) {
 		assert object != null;
 

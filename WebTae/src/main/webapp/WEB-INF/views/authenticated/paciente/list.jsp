@@ -21,7 +21,7 @@
                 <th><spring:message code="authenticated.paciente.list.tipoSangre" /></th>
                 <th><spring:message code="authenticated.paciente.list.genero" /></th>
                 <th><spring:message code="authenticated.paciente.list.historialMedico" /></th>
-                <th><spring:message code="authenticated.paciente.list.prioridad" /> <!-- Cambiado a prioridad --> </th>
+                <th><spring:message code="authenticated.paciente.list.urgencia" /> <!-- Cambiado a prioridad --> </th>
             </tr>
         </thead>
         <tbody>
